@@ -1,5 +1,6 @@
 {
   "name": "next-resume",
+  "author": "Rinku Kumar",
   "version": "0.1.0",
   "private": true,
   "scripts": {

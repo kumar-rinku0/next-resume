@@ -4,7 +4,7 @@ export const generalData = {
   jobTitle: "Senior Full Stack Developer",
   website: "https://www.rinkukumar.in",
   about:
-    "Hey there! I'm Rinku Kumar, a senior full stack developer with 5 years of experience in web development.",
+    "Hey there! I'm Rinku Kumar, a senior full stack developer with 3 years of experience in web development.",
   contacts: [
     {
       label: "Email",

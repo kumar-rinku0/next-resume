@@ -6,7 +6,8 @@ export const contentData = [
         title: "Senior Full Stack Developer at Nidhi Corporation",
         subTitle: "Remote",
         date: "2025 - Present",
-        description: "Design system, UI dev and web animations.",
+        description:
+          "Design, develop, and maintain scalable, high-performance web applications.",
       },
       {
         title: "Full Stack Developer at Freelance",
