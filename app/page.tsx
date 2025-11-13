@@ -80,7 +80,7 @@ export default function Home() {
           return <Content {...content} key={index} />;
         })}
         <section className="my-14 text-sm">
-          <h3 className="mb-6 text-slate-900">Contact</h3>
+          <h3 className="mb-6 text-slate-900 dark:text-slate-100">Contact</h3>
           <div className="flex flex-col gap-6">
             {generalData.contacts.map((contact, index) => {
               return (
@@ -115,8 +115,13 @@ export default function Home() {
             })}
           </div>
         </section>
-        <div className="px-6 absolute left-0 bottom-6">
-          <ThemeSwitch />
+        <div className="py-6 flex justify-between items-center gap-2">
+          <div className="text-xs text-slate-900 dark:text-slate-100">
+            &copy; {new Date().getFullYear()} Rinku Kumar
+          </div>
+          <div className="ml-6">
+            <ThemeSwitch />
+          </div>
         </div>
       </main>
     </>

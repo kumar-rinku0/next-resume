@@ -1,8 +1,10 @@
 "use client";
-import { useState, useEffect } from "react";
-import { useTheme } from "next-themes";
 
-const ThemeSwitch = () => {
+import { useEffect, useState } from "react";
+import { useTheme } from "next-themes";
+import { Button } from "./ui/button";
+
+export default function ThemeSwitch() {
   const [mounted, setMounted] = useState(false);
   const { theme, setTheme } = useTheme();
 
@@ -11,29 +13,23 @@ const ThemeSwitch = () => {
   }, []);
 
   if (!mounted) {
-    return null;
+    return null; // Or a loader, or whatever fallback you prefer
   }
-
   return (
-    <>
-      <label
-        htmlFor="theme"
-        className="mr-2 font-light text-sm text-slate-400 dark:text-slate-400"
-      >
-        Theme
-      </label>
-      <select
-        value={theme}
-        onChange={(e) => setTheme(e.target.value)}
-        className="font-light text-sm text-slate-900 dark:text-slate-100"
-        id="theme"
-      >
-        <option value="system">System</option>
-        <option value="dark">Dark</option>
-        <option value="light">Light</option>
-      </select>
-    </>
+    <Button
+      variant="ghost"
+      size="sm"
+      onClick={() => {
+        if (theme === "system") {
+          setTheme("light");
+        } else if (theme === "light") {
+          setTheme("dark");
+        } else {
+          setTheme("system");
+        }
+      }}
+    >
+      {theme === "system" ? "System" : theme === "light" ? "Light" : "Dark"}
+    </Button>
   );
-};
-
-export default ThemeSwitch;
+}
