@@ -19,6 +19,7 @@ export default function ThemeSwitch() {
     <Button
       variant="ghost"
       size="sm"
+      className="text-xs"
       onClick={() => {
         if (theme === "system") {
           setTheme("light");

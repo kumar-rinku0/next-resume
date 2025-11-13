@@ -17,6 +17,26 @@ export const contentData = [
       },
     ],
   },
+  //   @NOTE: You can add more sections here
+  {
+    title: "Projects",
+    items: [
+      {
+        title: "Donation Collection Platform",
+        subTitle: "Next.js, PostgreSQL, Prisma",
+        date: "2025 - Present",
+        description:
+          "A platform to facilitate and manage online donations for various causes.",
+      },
+      {
+        title: "Staff Management System",
+        subTitle: "React, Node.js, MongoDB",
+        date: "2023 - 2025",
+        description:
+          "A web application to manage staff records, attendance, and payroll.",
+      },
+    ],
+  },
   {
     title: "Education",
     items: [
@@ -25,18 +45,6 @@ export const contentData = [
         subTitle: "RTU, Kota",
         date: "2019 - 2023",
         description: "Specialized in web development.",
-      },
-    ],
-  },
-  //   @NOTE: You can add more sections here
-  {
-    title: "Projects",
-    items: [
-      {
-        title: "Project 1",
-        subTitle: "Sub Title",
-        date: "2015 - 2016",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing eli",
       },
     ],
   },
